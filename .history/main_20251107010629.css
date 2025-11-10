@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  min-width: 100vw;
+}
+
+nav {
+  padding: 16px 32px;
+  min-height: 80px;
+  background-color: #1F1F1F;
+}
+
+nav img {
+  max-height: 48px;
+  background-color: white;
+}
+
+.spacer {
+  /* border: 1px solid yellow; */
+  display: inline-block;
+  /* Parent width - Logo width - Menu <ul> width */
+  width: calc(100% - 48px - 268px);
+}
+
+nav ul {
+  list-style: none;
+  display: inline-block;
+  margin-bottom: 20px;
+  vertical-align: bottom;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav ul li a:link {
+  color: white;
+}
+
+nav ul li a:visited {
+  color: white;
+}
+
+nav ul li a.current {
+  color: aquamarine;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: rgb(229, 145, 0);
+}
+
+nav ul li a:active {
+  color: rgb(92, 229, 0);
+}
+
+/* Services dropdown menu */
+#services-li {
+  position: relative;
+}
+
+#services-li:hover #services-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+#services-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  margin-bottom: 0px;
+  padding: 4px 16px;
+  background-color: #323F42;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-2vh);
+  transition: opacity 0.3s, transform 0.15s;
+}
+
+#services-menu li {
+  margin-right: 0px;
+  padding: 4px;
+}
+
+#services-menu a {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* Page sections and content */
+main {
+  padding-top: 100px;
+}
+
+main section {
+  height: 200px;
+}
+
+.section-a {
+  background-color: rgb(136, 199, 231);
+}
+
+.section-b {
+  background-color: rgb(136, 231, 187);
+}
+
+footer {
+  height: 40px;
+  background-color: #1F1F1F;
+  color: white;
+}

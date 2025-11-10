@@ -148,7 +148,6 @@ header nav ul li a:hover {
 /* Side menu on Services */
 .page {
     display: flex;   /* content in columns */
-    flex-direction: row-reverse;
     gap: 0;
 }
 

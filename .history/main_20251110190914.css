@@ -86,13 +86,13 @@ header nav ul li a {
 
 /* Text color if we are in the current page*/
 header nav ul li a.current {
-    color: #ce0505;
+    color: aquamarine;
     font-weight: bold;
 }
 
 /* Mouse over the word */
 header nav ul li a:hover {
-    color: #ff2222/* rgb(92, 229, 0) in class*/;
+    color: rgb(92, 229, 0);
 }
 
 /* ---------------------- Added from Cursada: Dropdown Menu ---------------------- */
@@ -115,7 +115,7 @@ header nav ul li a:hover {
     z-index: 2000;
     margin: 0;
     padding: 4px 16px;
-    background-color: #0e0e0e;
+    background-color: #323F42;
     visibility: hidden;
     opacity: 0;
     transform: translateY(-6px);
@@ -131,6 +131,7 @@ header nav ul li a:hover {
     padding: 4px 0;
 }
 
+
 #services-menu a {
     display: inline-block;
     white-space: nowrap;
@@ -139,8 +140,7 @@ header nav ul li a:hover {
 }
 
 #services-menu a:hover {
-    text-decoration: none;
-    color: #d21010
+    text-decoration: underline;
 }
 
 /* 1.2.special part -------------------------------- Side Menu --------------------------------------------------*/
@@ -148,7 +148,6 @@ header nav ul li a:hover {
 /* Side menu on Services */
 .page {
     display: flex;   /* content in columns */
-    flex-direction: row-reverse;
     gap: 0;
 }
 
@@ -161,7 +160,7 @@ header nav ul li a:hover {
 /* Style */
 .side-nav {
     width: 28%;
-    background-color: #000000;
+    background-color: #2a2a2a;
     color: #fff;
     margin: 0;                /* sin espacio externo */
     padding: 0;               /* sin espacio interno general */
@@ -222,27 +221,6 @@ main.page {
     margin-bottom: 24px;
 }
 
-/* sticky rojo horizontal */
-.home-sticky-box {
-    position: sticky;
-    top: 120px; /* aparece debajo del header fijo */
-    background-color: #c00000; /* fondo rojo */
-    color: #fff;               /* letras blancas */
-    padding: 12px 16px;
-    margin: 16px 0;
-    width: 100%;               /* ocupa todo lo horizontal del contenedor */
-    border-radius: 4px;
-    font-weight: 600;
-    text-align: center;   
-}
-
-/* subtítulo debajo del sticky, separado para que no lo tape */
-.home-subtitle {
-    margin-top: 70px;  /* separa el título del sticky cuando se pega arriba */
-    font-size: 1.4rem;
-    text-align: center;   
-}
-
 /* text cards */
 .card-grid {
     display: block;
@@ -260,45 +238,11 @@ main.page {
     margin-bottom: 8px;
 }
 
-/* parrafos con imágenes hechas con símbolos, tipo mecanografía */
-.symbol-art {
-    font-family: "Courier New", Courier, monospace;
-    font-size: 0.8rem;
-    line-height: 1.05;
-    margin-top: 14px;
-    background-color: #f5f5f5;
-    border: 1px solid #ddd;
-    padding: 10px 12px;
-    display: block;          /* que ocupe todo el ancho */
-    white-space: pre;        /* respeta los espacios del arte */
-    overflow-x: auto;        /* por si el arte es ancho */
-}
-
-/* botón back-to-top */
-#back-to-top {
-    position: fixed;  /* scrolls with the page */
-    bottom: 20px;
-    right: 20px;
-    background-color: #1F1F1F;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-    font-size: 20px;
-    cursor: pointer;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-    z-index: 3000;
-}
-
-#back-to-top:hover {
-    background-color: #c50808; /* rojo clarito al pasar el mouse */
-}
 
 /* 3.---------------------- Footer ---------------------- */
 #main-footer {
     background-color: #000000;
-    color: #717171;
+    color: #ffffff;
     text-align: center;
     padding: 16px 0 24px;
     margin: 0;
@@ -315,14 +259,14 @@ main.page {
 #main-footer nav ul {
     display: inline-block;
     list-style: none;
-    margin: 4px; /* Distance between FAQ text and white line */
+    margin: 0; /* Distance between FAQ text and white line */
     padding: 0;
     /*border-bottom: 1px solid white */ /*another option to do it*/;
 }
 
 #main-footer nav ul li {
     display: inline-block;
-    margin: 0 13px;  /*Distance between words in footer: FAQ, Terms, etc. */
+    margin: 0 10px;  /*Distance between words in footer: FAQ, Terms, etc. */
 }
 
 #main-footer nav ul li a {
@@ -333,10 +277,10 @@ main.page {
 
 /* Line separation */
 .footer-line {
-  border: none;
-  border-top: 1px solid rgba(203, 201, 201, 0.4); /* mismo grosor, más suave */
-  width: 90%;
-  margin: 8px auto 12px;
+    border: none;
+    border-top: 0.1px solid #ccc;
+    width: 80%;
+    margin: 8px auto 12px;
 }
 
 /* Last Line Text: My Website */

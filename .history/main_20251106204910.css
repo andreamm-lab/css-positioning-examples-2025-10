@@ -1,0 +1,201 @@
+/* 1.---------------------- General ---------------------- */
+
+*  {
+    Box-sizing: border-box;
+    Margin: 0;
+    Padding: 0;
+}
+
+Body {
+    Font-family: Arial, Helvetica, sans-serif;
+    Background-color: #ffffff;
+    Color: #000;
+    Min-height: 100vh;
+    Display: flex;
+    Flex-direction: column;
+}
+
+Main {
+    Flex: 1;
+}
+
+/* 2.---------------------- Header ---------------------- */
+
+/* Header navigation: logo + menú */
+Header nav {
+    Padding: 10px 32px;
+    Min-height: 80px;
+    Background-color: #1F1F1F;
+    Display: flex;
+    Align-items: center;           /* centra verticalmente */
+    Justify-content: space-between; /* separa logo y menú */
+}
+
+Header nav img {
+    Max-height: 48px;
+    Background-color: white;
+    Display: inline-block;
+    Vertical-align: middle;
+}
+
+Header nav ul {
+    List-style: none;
+    Display: flex;
+    Gap: 20px;
+}
+
+Header nav ul li a {
+    Text-decoration: none;
+    Color: white;
+}
+
+Header nav ul li a.current {
+    Color: aquamarine;
+    Font-weight: bold;
+}
+
+Header nav ul li a:hover {
+    Color: rgb(92, 229, 0);
+}
+
+/* 3.---------------------- Main / Home content ---------------------- */
+
+Main {
+    Display: block;
+    Padding: 24px 32px; /* padding general para Home */
+}
+
+/* 🔹 en la página Services (class=”page”), quitamos el padding superior */
+Main.page {
+    Padding: 0 32px 24px 32px; /* top=0 para pegar al header */
+}
+
+#page-title {
+    Font-size: 2rem;
+    Text-align: center;
+    Margin-bottom: 24px;
+}
+
+.card-grid {
+    Display: block;
+}
+
+.card {
+    Background-color: #f0f0f0;
+    Border: 1px solid #d0d0d0;
+    Border-radius: 6px;
+    Padding: 16px;
+    Margin-bottom: 16px;
+}
+
+.card h2 {
+    Margin-bottom: 8px;
+}
+
+/* 4.---------------------- Services layout ---------------------- */
+
+/* Contenedor principal: contenido + aside */
+.page {
+    Display: flex;   /* coloca el contenido y aside en columnas */
+    Gap: 0;
+}
+
+/* Contenido principal */
+.main-content {
+    Width: 72%;
+    Vertical-align: top;
+}
+
+/* Aside Categories */
+.side-nav {
+    Width: 28%;
+    Background-color: #2a2a2a;
+    Color: #fff;
+    Margin: 0;                /* sin espacio externo */
+    Padding: 0;               /* sin espacio interno general */
+    Border: none;             /* sin borde */
+    Box-sizing: border-box;
+    Min-height: 100%;         /* ocupa todo el alto */
+}
+
+/* Título dentro del aside */
+.side-nav h2 {
+    Margin: 0;
+    Padding: 16px 16px 8px;
+    Font-size: 1.6rem;
+    Font-weight: 700;
+}
+
+/* Lista del aside */
+.side-nav ul {
+    List-style: none;
+    Margin: 0;
+    Padding: 0 16px 16px;
+}
+
+.side-nav ul li {
+    Margin: 0;
+    Padding: 6px 0;
+}
+
+.side-nav ul li a {
+    Color: #4bb4ff;
+    Text-decoration: none;
+    Display: inline-block;
+    Width: 100%;
+}
+
+.side-nav ul li a:hover {
+    Text-decoration: underline;
+    Background-color: #1f1f1f;
+}
+
+/* 5.---------------------- Footer ---------------------- */
+
+#main-footer {
+    Background-color: #1F1F1F;
+    Color: #ffffff;
+    Text-align: center;
+    Padding: 16px 0 24px;
+    Margin: 0;
+    Width: 100%;
+}
+
+#main-footer nav {
+    Background: none;
+    Padding: 0;
+    Margin: 0 auto;
+}
+
+#main-footer nav ul {
+    Display: inline-block;
+    List-style: none;
+    Margin: 0;
+    Padding: 0;
+}
+
+#main-footer nav ul li {
+    Display: inline-block;
+    Margin: 0 10px;
+}
+
+#main-footer nav ul li a {
+    Color: rgb(51, 122, 216);
+    Text-decoration: none;
+    Font-size: 0.9rem;
+}
+
+/* Línea gris */
+.footer-line {
+    Border: none;
+    Border-top: 1px solid #ccc;
+    Width: 80%;
+    Margin: 8px auto 12px;
+}
+
+/* Texto */
+#main-footer p {
+    Font-size: 0.8rem;
+    Margin: 0;
+    Padding-top: 8px;
+}
